@@ -1,0 +1,109 @@
+.skills-section {
+    
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .skills-title {
+    font-size: 36px; /* Tamaño más grande */
+    font-weight: 700; /* Más grueso */
+    color: #FFD700; /* Amarillo del proyecto */
+    text-shadow: 1px 1px 0 #000; /* Sombra ligera para resaltar */
+    margin-bottom: 20px;
+    text-align: center; /* Centrado */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase;
+  }
+  
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #f6c400; /* Fondo amarillo */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    max-width: 1000px; /* Ancho máximo */
+    margin: 0 auto;
+    
+  }
+  
+  .skill-item {
+    text-align: center;
+    color: #000000; /* Texto negro */
+  }
+  
+  .skill-icon {
+    font-size: 3rem; /* Tamaño grande para los íconos */
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+
+  .skill-item:hover {    
+    border-radius: 10px; /* Mantener los bordes redondeados */
+    transition: background-color 0.3s ease;   
+    
+}
+  
+  .skill-item:hover .skill-icon {
+    transform: scale(1.2); /* Agranda el ícono al hacer hover */
+    color: #800080; /* Morado al hacer hover */    
+  }
+  
+  .skill-item p {
+    font-size: 1rem;
+    font-weight: bold;    
+  }
+  
+
+/* 1. Teléfonos pequeños */
+@media screen and (max-width: 479px) {
+  .skills-container {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 15px; /* Reduce el espacio entre elementos */
+    padding: 10px; /* Menos padding */
+  }
+
+  .skill-icon {
+    font-size: 2rem; /* Iconos más pequeños */
+  }
+
+  .skill-item p {
+    font-size: 0.9rem; /* Texto más pequeño */
+  }
+}
+
+/* 2. Teléfonos medianos */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .skills-container {
+    flex-direction: row; /* Mantén en fila si caben */
+    flex-wrap: wrap; /* Permite que bajen a otra línea si es necesario */
+    gap: 20px; /* Ajusta el espacio entre elementos */
+    padding: 15px; /* Padding moderado */
+  }
+
+  .skill-icon {
+    font-size: 2.5rem; /* Tamaño intermedio para los íconos */
+  }
+
+  .skill-item p {
+    font-size: 1rem; /* Texto con tamaño base */
+  }
+}
+
+/* 3. Tabletas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .skills-container {
+    gap: 25px; /* Espacio un poco mayor entre elementos */
+    padding: 20px; /* Mantén el padding base */
+  }
+
+  .skill-icon {
+    font-size: 3rem; /* Tamaño similar al diseño base */
+  }
+
+  .skill-item p {
+    font-size: 1.1rem; /* Texto ligeramente más grande */
+  }
+}

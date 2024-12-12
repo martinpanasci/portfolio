@@ -1,0 +1,162 @@
+/* General Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    background: linear-gradient(90deg, #000000, #800080); /* Negro a morado */
+    color: #FFD700;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    
+  }
+  
+  /* Contenedor centrado */
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenido */
+    width: 100%; /* Asegura que el contenedor sea responsivo */
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 45px; /* Ajusta el tamaño del logo */
+    border-radius: 50%; /* Redondear los bordes si lo prefieres */
+  }
+  
+  /* Navigation Links */
+  .nav {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #FFD700; /* Amarillo */
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    font-weight: bold;   
+    position: relative; 
+  }
+  
+  .nav a:hover {
+    color: #FFFFFF; /* Morado */
+    transform: scale(1.1);
+  }
+
+  .nav a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #FFD700; /* Subrayado amarillo */
+    transition: width 0.3s;
+  }
+  
+  .nav a:hover::after {
+    width: 100%;
+  }
+  
+  /* Hamburger Menu */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #FFD700; /* Amarillo */
+    transition: all 0.3s ease;
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .nav {
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #2b2b2b;
+      flex-direction: column;
+      gap: 15px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: none;
+    }
+  
+    .nav.open {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+    }
+  }
+  
+  /* 1. Teléfonos pequeños */
+@media screen and (max-width: 479px) {
+  .header-container {
+    padding: 5px 10px;
+  }
+
+  .logo img {
+    height: 40px; /* Reducimos el tamaño del logo */
+  }
+
+  .nav a {
+    font-size: 18px; /* Disminuimos el tamaño de los enlaces */
+  }
+
+  .hamburger span {
+    width: 20px; /* Ajustamos el ancho del menú hamburguesa */
+    height: 2px; /* Ajustamos el grosor */
+  }
+}
+
+/* 2. Teléfonos medianos */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .header-container {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    height: 45px; /* Ajustamos el tamaño del logo */
+  }
+
+  .nav a {
+    font-size: 18px; /* Tamaño de texto ligeramente menor */
+  }
+
+  .hamburger span {
+    width: 22px; /* Ajustamos el ancho del menú hamburguesa */
+    height: 2.5px; /* Ajustamos el grosor */
+  }
+}
+
+/* 3. Tabletas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .header-container {
+    padding: 15px 20px;
+  }
+
+  .logo img {
+    height: 50px; /* Tamaño del logo similar al diseño base */
+  }
+
+  .nav a {
+    font-size: 20px; /* Mantén el tamaño de texto original */
+  }
+
+  .hamburger span {
+    width: 25px; /* Tamaño base del menú hamburguesa */
+    height: 3px;
+  }
+}

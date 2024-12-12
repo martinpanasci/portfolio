@@ -1,0 +1,204 @@
+.projects-section {
+    padding: 40px 20px;
+    text-align: center;    
+  }
+  
+  .projects-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFD700;
+    text-shadow: 1px 1px 0 #000;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;    
+  }
+  
+  .project-card {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border: 2px solid #FFD700; /* Borde amarillo */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro transparente */
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+    margin-bottom: 10px;
+  }
+  
+  .project-image img {
+    cursor: pointer;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #FFD700; /* Borde amarillo */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+
+  .project-image img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al 110% */
+    border-color: #800080; /* Cambia el borde a morado */
+  }
+  
+  .project-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .project-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFD700; /* Amarillo */
+    margin-bottom: 10px;
+  }
+  
+  .project-description {
+    font-size: 1rem;
+    color: #ffffff; /* Blanco */
+  }
+  
+  .project-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    gap: 10px;
+  }
+  
+  .project-tech p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #FFD700; /* Amarillo */
+  }
+  
+  .project-tech ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .project-tech li {
+    font-size: 0.9rem;
+    color: #ffffff; /* Blanco */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Espacio entre el icono y el texto */
+    margin-bottom: 10px;
+  }
+  
+  .tech-icon {
+    font-size: 1.2rem; /* Tamaño del icono */
+    color: #FFD700; /* Amarillo */
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .project-tech li:hover .tech-icon {
+    color: #800080; /* Morado */
+    transform: scale(1.2); /* Efecto de agrandado */
+  }
+  
+  .project-button {    
+    display: inline-block;
+    background-color: #FFD700;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .project-button:hover {
+    background-color: #800080; /* Morado */
+    color: #ffffff; /* Blanco */
+  }
+
+  .project-link-github {  
+    text-decoration: none;
+    color: #FFD700; /* Amarillo para destacar los enlaces */
+    font-size: 3.5rem;
+    display: flex;     
+    transition: color 0.3s ease, transform 0.3s ease;  
+    margin: 10px;
+  }
+
+  .project-link-github:hover{
+    color: #800080;
+  }
+  
+  /* Teléfonos pequeños */
+@media screen and (max-width: 479px) {
+  .project-card {
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info,
+  .project-extra {
+    text-align: center;
+  }
+
+  .project-tech ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .project-button {
+    width: 100%;
+  }
+}
+
+/* Teléfonos medianos */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .project-card {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .project-info,
+  .project-extra {
+    text-align: center;
+  }
+
+  .project-tech ul {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .project-button {
+    width: 100%;
+  }
+}
+
+/* Tabletas */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .project-card {
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .project-image img {
+    width: 300px;
+    height: auto;
+  }
+
+  .project-tech ul {
+    justify-content: flex-start;
+  }
+}

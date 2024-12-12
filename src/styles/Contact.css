@@ -1,0 +1,121 @@
+.contact-section {
+    padding: 40px 20px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .contact-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #FFD700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: #f6c400; /* Fondo amarillo */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contact-item {
+    text-align: center;
+  }
+  
+  .contact-icon {
+    font-size: 2.5rem;
+    margin-right: 10px;
+    color: #000;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-item a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #000;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+  }
+  
+  .contact-item a:hover .contact-icon {
+    transform: scale(1.1);
+    color: #800080; /* Morado */
+  }
+  
+  .contact-item a:hover {
+    color: #800080;
+  }
+  
+  .contact-message {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #FFD700;
+  }
+ 
+  .email-copy-container {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%; /* Aparece encima del icono */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #800080;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.phone-copy-container {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 100%; /* Aparece encima del ícono */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #800080;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,35 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; /* Pegado al borde inferior */
+    right: 20px; /* Pegado al borde derecho */
+    width: 50px; /* Tamaño del botón */
+    height: 50px; /* Igual al ancho para mantenerlo circular */
+    background-color: #FFD700; /* Amarillo */
+    color: #000; /* Negro */
+    border: none;
+    border-radius: 50%; /* Botón circular */
+    font-size: 24px; /* Tamaño adecuado de la flecha */
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    z-index: 1000; /* Encima de otros elementos */
+    margin: 0; /* Asegúrate de que no haya márgenes que desplacen el botón */
+    transform: none; /* Elimina posibles transformaciones previas */
+}
+
+.scroll-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.scroll-to-top:hover {
+    background-color: #800080; /* Morado */
+    color: #FFF; /* Blanco */
+    
+}
