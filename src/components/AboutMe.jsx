@@ -23,16 +23,16 @@ const AboutMe = () => {
     return (
         <section className="about-me" id="about">
             <div className="about-content">
-                <div className="photo" onClick={handleModal}>
-                    <img src="https://i.imgur.com/x0eLbam.jpeg" alt="Perfil" />
+                <div className="photo" >
+                    <img src="https://i.imgur.com/x0eLbam.jpeg" alt="Perfil" onClick={handleModal} />
                     <div className="links" onClick={(e) => e.stopPropagation()}>
                         <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="link-item">
                             <FontAwesomeIcon icon={faFilePdf} className="icon" /> CV
                         </a>
                         <div className="email-copy-container">
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleCopyEmail(); }} className="link-item" >
+                            <button onClick={(e) => { e.preventDefault(); handleCopyEmail(); }} className="link-item" >
                                 <FontAwesomeIcon icon={faEnvelope} className="icon" /> Email
-                            </a>
+                            </button>
                             {copied && <span className="tooltip">¡Dirección copiada!</span>}
                         </div>
                         <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" className="link-item">
@@ -46,10 +46,19 @@ const AboutMe = () => {
                 <div className="text">
                     <h1>Martin Ignacio Panasci</h1>
                     <h2>Programador Full Stack</h2>
-                    <p>Si algo me motiva, son los desafíos. Siempre busco mejorar, tanto en la programación como en la vida en general.</p>
-                    <p>Mi enfoque está en encontrar soluciones efectivas, combinando mi experiencia académica, pragmatismo y adaptabilidad.</p>
-                    <p>Actualmente, busco oportunidades para crecer, desarrollar mi potencial y dejar mi huella a través de ideas y resultados concretos.</p>
-                    <p>Si buscás a alguien comprometido, confiable y con el potencial para generar impacto, no busques más.</p>
+                    <p>
+                        Aunque comencé como programador Full Stack para abordar proyectos freelance de manera integral, mi verdadera pasión está en el backend.
+                        Disfruto diseñar la lógica detrás de las aplicaciones, desarrollar funcionalidades robustas y enfrentar desafíos técnicos que requieren soluciones creativas.
+                    </p>
+                    <p>
+                        Si algo me motiva, son los desafíos. Siempre busco mejorar, tanto en la programación como en la vida en general.
+                        Mi enfoque está en encontrar soluciones efectivas, combinando mi experiencia académica, pragmatismo y adaptabilidad.
+                    </p>
+                    <p>
+                        Actualmente, busco oportunidades para crecer, desarrollar mi potencial y dejar mi huella a través de ideas y resultados concretos.
+                        Si buscás a alguien comprometido, confiable y con el potencial para generar impacto, no busques más.
+                    </p>
+
                     <button className="btn-about-me" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
                         Contáctame
                     </button>

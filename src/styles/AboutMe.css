@@ -21,10 +21,11 @@
   .photo {
     flex: 1;
     text-align: center;
-    cursor: pointer;
+    
   }
   
   .photo img {
+    cursor: pointer;
     width: auto;
     height: 400px; /* Forma rectangular */
     object-fit: cover;
@@ -49,9 +50,11 @@
   }
   
   .link-item {
-    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
-    color: #FFD700; /* Amarillo para destacar los enlaces */
+    color: #FFD700; /* Amarillo */
     font-size: 1.2rem;
     display: flex;
     align-items: center;

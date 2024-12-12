@@ -130,8 +130,8 @@ const projectsData = [
             { name: "MySQL", icon: faDatabase },
             { name: "JWT", icon: faLock },
         ],
-        link: "https://otro-proyecto.com",
-        github: "",
+        link: "",
+        github: "https://github.com/martinpanasci/URL-Shortener",
     },
 ];
 
