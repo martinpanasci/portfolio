@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./index.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import Header from "./components/Header"; 
 import AboutMe from "./components/AboutMe";
@@ -10,15 +12,27 @@ import ContactMe from "./components/ContactMe";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1200, 
+      once: true, // Animar solo una vez al hacer scroll
+    });
+  }, []);
+
   return (
     <Router>
       <div>
         {/* Incluye el Header fuera de las rutas */}
         <Header />
-        <AboutMe />
-        <Skills />
-        <Projects />
-        <ContactMe />
+        <div data-aos="fade-down">
+          <AboutMe />
+        </div>       
+        <Skills />            
+        <Projects />        
+        <div data-aos="zoom-in">
+          <ContactMe />
+        </div>
         <ScrollToTopButton />
         {/* Define las rutas de la aplicación */}
         <Routes>          

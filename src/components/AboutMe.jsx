@@ -24,7 +24,7 @@ const AboutMe = () => {
         <section className="about-me" id="about">
             <div className="about-content">
                 <div className="photo" >
-                    <img src="https://i.imgur.com/x0eLbam.jpeg" alt="Perfil" onClick={handleModal} />
+                    <img src="https://mpanasci.com/FotoPerfil.webp" alt="Perfil" onClick={handleModal} />
                     <div className="links" onClick={(e) => e.stopPropagation()}>
                         <a href="/cv.pdf" target="_blank" rel="noopener noreferrer" className="link-item">
                             <FontAwesomeIcon icon={faFilePdf} className="icon" /> CV
@@ -35,7 +35,7 @@ const AboutMe = () => {
                             </button>
                             {copied && <span className="tooltip">¡Dirección copiada!</span>}
                         </div>
-                        <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer" className="link-item">
+                        <a href="https://www.linkedin.com/in/martin-panasci/" target="_blank" rel="noopener noreferrer" className="link-item">
                             <FontAwesomeIcon icon={faLinkedin} className="icon" />
                         </a>
                         <a href="https://github.com/martinpanasci" target="_blank" rel="noopener noreferrer" className="link-item">
@@ -68,7 +68,7 @@ const AboutMe = () => {
                 <div className="modal-overlay" onClick={handleModal}>
                     <div className="modal-content">
                         <img
-                            src="https://i.imgur.com/15Da99Z.jpeg"
+                            src="https://mpanasci.com/FotoPerfil.webp" 
                             alt="Perfil Grande"
                         />
                     </div>

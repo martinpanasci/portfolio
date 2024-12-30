@@ -61,8 +61,8 @@
   .project-extra {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos horizontalmente */
-    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: flex-start; /* Alinea los elementos al inicio horizontalmente */
+    justify-content: flex-start; /* Alinea los elementos al inicio verticalmente */
     gap: 10px;
   }
   

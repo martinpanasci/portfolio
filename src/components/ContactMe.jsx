@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedin, faGithub,faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { faFilePdf, faEnvelope } from "@fortawesome/free-solid-svg-icons"; // Importa el ícono de teléfono
 import "../styles/Contact.css";
 
@@ -21,28 +21,28 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact-section" id="contact">
+        <div className="contact-section" id="contact">
             <h2 className="contact-title">Contactame</h2>
             <div className="contact-links">
                 <div className="contact-item">
-                    <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
+                    <a href="https://mpanasci.com/cv.pdf" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faFilePdf} className="contact-icon" /> Ver CV
                     </a>
                 </div>
                 <div className="contact-item email-copy-container">
-                    <a href="#" onClick={(e) => { e.preventDefault(); handleCopyEmail(); }}>
+                    <button onClick={(e) => { e.preventDefault(); handleCopyEmail(); }} className="contact-button">
                         <FontAwesomeIcon icon={faEnvelope} className="contact-icon" /> Email
-                    </a>
+                    </button>
                     {copiedEmail && <span className="tooltip">¡Email copiado!</span>}
                 </div>
                 <div className="contact-item phone-copy-container">
-                    <a href="#" onClick={(e) => { e.preventDefault(); handleCopyPhone(); }}>
+                    <button onClick={(e) => { e.preventDefault(); handleCopyPhone(); }} className="contact-button">
                         <FontAwesomeIcon icon={faWhatsapp} className="contact-icon" /> Celular
-                    </a>
+                    </button>
                     {copiedPhone && <span className="tooltip">¡Teléfono copiado!</span>}
                 </div>
                 <div className="contact-item">
-                    <a href="https://linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/martin-panasci/" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faLinkedin} className="contact-icon" /> LinkedIn
                     </a>
                 </div>
@@ -56,7 +56,8 @@ const Contact = () => {
                 ¿Buscabas a alguien que marque la diferencia? Acá estoy.<br />
                 Contactame y descubri cómo puedo encajar perfectamente con lo que necesitas.<br /> No te vas a arrepentir.
             </p>
-        </section>
+        </div>
+
     );
 };
 

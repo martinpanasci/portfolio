@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     padding: 40px 20px;    
-    color: #ffffff; /* Textos en blanco */
+    color: #ffffff; /* Textos en blanco */    
     
   }
   
@@ -74,6 +74,7 @@
     color: #800080; /* Morado para el ícono cuando se hace hover */
   }
   
+  /*
   .link-item::after {
     content: "";
     position: absolute;
@@ -86,8 +87,9 @@
   }
   
   .link-item:hover::after {
-    width: 100%; /* Subrayado animado */
+    width: 100%; /* Subrayado animado *//*
   }
+  */
   
   
   .text {
@@ -170,6 +172,9 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .modal-content img {
@@ -179,8 +184,7 @@
     height: auto; /* Ajusta la altura proporcionalmente */
     display: block;
     margin: 0 auto; /* Centra horizontalmente */
-    border-radius: 10px; /* Redondea los bordes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Agrega sombra */
+    border-radius: 10px; /* Redondea los bordes */    
   }
 
   .email-copy-container {

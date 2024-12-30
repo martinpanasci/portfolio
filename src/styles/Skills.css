@@ -1,5 +1,4 @@
-.skills-section {
-    
+.skills-section {    
     text-align: center;
     padding: 40px 20px;
   }
@@ -12,7 +11,7 @@
     margin-bottom: 20px;
     text-align: center; /* Centrado */
     letter-spacing: 2px; /* Espaciado entre letras */
-    text-transform: uppercase;
+    text-transform: uppercase;    
   }
   
   .skills-container {
@@ -54,7 +53,7 @@
   .skill-item p {
     font-size: 1rem;
     font-weight: bold;    
-  }
+  } 
   
 
 /* 1. Teléfonos pequeños */
